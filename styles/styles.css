@@ -17,7 +17,7 @@
   --color-grey-2: #b2becd;
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
-  --color-grey-5: #2a2e35;
+  --color-grey-5: #2a2e354b;
   --color-grey-6: #12181b;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
@@ -33,7 +33,7 @@
   --color-grey-2: #6c7983;
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
-  --color-grey-5: #217d875b;
+  --color-grey-5: #217d8736;
   --color-grey-6: #12181b;
 }
 
@@ -240,7 +240,29 @@ section {
   transform: translateY(-5px);
   border: 1px solid var(--color-secondary);
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+  transform: scale3d(1.03,1.03,0.8);
+  transition: transform 0.2s ease-in-out;
 }
+.about-container .right-about .about-item .abt-text .small-text-hidden {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 0.5rem;
+  color: var(--color-secondary);
+  opacity: 0;
+}
+.about-container .right-about .about-item:hover .small-text-hidden {
+  transform: translateX(2vw);
+  transition: 1.5s;
+  opacity: 1;
+  font-size: 1.6rem;
+}
+
+.about-container .right-about .about-item:hover .large-text {
+  transform: translateX(5vw);
+  transition: 1s;
+  opacity: 0;
+}
+
 .about-container .right-about .about-item .abt-text {
   padding: 1.5rem;
   display: flex;
@@ -252,7 +274,7 @@ section {
   color: var(--color-secondary);
 }
 .about-container .right-about .about-item .abt-text .small-text {
-  padding-left: 3rem;
+  padding-left: 2.5rem;
   position: relative;
   text-transform: uppercase;
   font-size: 1.2rem;
@@ -306,7 +328,7 @@ section {
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress {
   width: 100%;
-  height: 0.75rem;
+  height: 0.95rem;
   background-color: var(--color-grey-4);
   margin-left: 1rem;
   position: relative;
@@ -323,6 +345,8 @@ section {
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress span:hover{
 box-shadow: 1px 1px 4px 1px var(--color-secondary) ;
+transform: scale3d(1.1,1.1,0.8);
+transition: transform 0.2s ease-in-out;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
@@ -362,7 +386,7 @@ box-shadow: 1px 1px 4px 1px var(--color-secondary) ;
   transform: translateX(-50%);
 }
 
-/*Timeline*/
+/*Timeline////////////////////////////////////*/
 .timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -375,6 +399,46 @@ box-shadow: 1px 1px 4px 1px var(--color-secondary) ;
   border-left: 1px solid var(--color-grey-5);
   transition: 0.5s;
 }
+
+/*Lenguages text*/
+.powerApps-text{
+  font-weight: 800;
+  color: #771894;
+}
+.powerAutomate-text{
+  font-weight: 800;
+  color: #1043B9;
+}
+.text-JS{
+  font-weight: 800;
+  color:#EAD41C ; 
+}
+.text-csharp{
+  font-weight: 800;
+  color:#621F74 ; 
+}
+.text-C{
+  font-weight: 800;
+  color:#005495 ; 
+}
+.text-HTML{
+  font-weight: 800;
+  color:#E56027 ; 
+}
+.text-CSS{
+  font-weight: 800;
+  color:#2449D8 ; 
+}
+.text-php{
+  font-weight: 800;
+  color:#7175AA;   
+}
+
+/*Lenguages text*/
+
+
+
+
 
 .timeline .timeline-item:hover{
   border: 1px solid var(--color-secondary);
