@@ -102,7 +102,7 @@
                     <div class="progress-bar">
                         <p class="prog-title">html5</p>
                         <div class="progress-con">
-                            <p class="prog-text">35%</p>
+                            <p class="prog-text">40%</p>
                             <div class="progress">
                                 <span class="html"></span>
                             </div>
@@ -120,7 +120,7 @@
                     <div class="progress-bar">
                         <p class="prog-title">javascript</p>
                         <div class="progress-con">
-                            <p class="prog-text">35%</p>
+                            <p class="prog-text">30%</p>
                             <div class="progress">
                                 <span class="js"></span>
                             </div>
@@ -323,7 +323,7 @@
         <section class="container contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
-                    <h2>Entre em  <span>contato</span><span class="bg-text">Contato</span></h2>
+                    <h2>Entre em <span>contato</span><span class="bg-text">Contato</span></h2>
                 </div>
                 <div class="contact-content-con">
                     <div class="left-contact">
@@ -338,7 +338,7 @@
                                     <span>Local</span>
                                 </div>
                                 <p>
-                                    : Belo Horizonte - Minas Gerais - Brasil
+                                    Belo Horizonte - Minas Gerais - Brasil
                                 </p>
                             </div>
                             <div class="contact-item">
@@ -347,7 +347,7 @@
                                     <span>Email</span>
                                 </div>
                                 <p>
-                                    <span>: matheuslcsantosbh@gmail.com</span>
+                                    <span>matheuslcsantosbh@gmail.com</span>
                                 </p>
                             </div>
                             <div class="contact-item">
@@ -356,7 +356,7 @@
                                     <span>Educação</span>
                                 </div>
                                 <p>
-                                    <span>: Faculdade Cotemig</span>
+                                    <span>Faculdade Cotemig</span>
                                 </p>
                             </div>
                             <div class="contact-item">
@@ -365,7 +365,7 @@
                                     <span>Telefone-Wpp</span>
                                 </div>
                                 <p>
-                                    <span>: (31)9 7226 2195</span>
+                                    <span>(31)9 7226 2195</span>
                                 </p>
                             </div>
                             <div class="contact-item">
@@ -374,7 +374,7 @@
                                     <span>Idiomas</span>
                                 </div>
                                 <p>
-                                    <span>Português(BR),English (Técnico - Básico->Intermediário),Spanish(Básico)</span>
+                                    <span>English Básico->Intermediário<br />Spanish(Básico)</span>
                                 </p>
                             </div>
                         </div>
@@ -390,22 +390,25 @@
                         </div>
                     </div>
                     <div class="right-contact">
-                        <form action="" class="contact-form">
+                        <form action="https://api.staticforms.xyz/submit" method="post" class="contact-form">
+                            <input type="hidden" name="accessKey" value="950d96db-4b76-41e4-9faa-1f499d366207"> 
                             <div class="input-control i-c-2">
-                                <input type="text" required placeholder="SEU NAME">
-                                <input type="email" required placeholder="SEU EMAIL">
+                                <input type="text" required placeholder="Nome" name="name">
+                                <input type="email" required placeholder="E-Mail" name="email">
                             </div>
                             <div class="input-control">
-                                <input type="text" required placeholder="ENTER SUBJECT">
+                                <input type="text" required placeholder="Assunto" name="subject">
                             </div>
                             <div class="input-control">
-                                <textarea name="" id="" cols="15" rows="8" placeholder="O que deseja..."></textarea>
+                                <textarea name="message" id="" cols="15" rows="8" placeholder="Mensagem..."></textarea>
                             </div>
-                            <div class="submit-btn">
+
+                            <div class="submit-btn" id="last-button">
                                 <a href="CV Matheus Santos.pdf" class="main-btn">
                                     <span class="btn-text">Download CV</span>
                                     <span class="btn-icon"><i class="fas fa-download"></i></span>
                                 </a>
+                                <input class="enviar" type="submit" value="Enviar">
                             </div>
                         </form>
                     </div>
