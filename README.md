@@ -1,7 +1,5 @@
 # Landing_Page
-<h4 align="center"> 
-    :construction:  Projeto em construção  :construction:
-</h4>
+
 <h1 align="center">
 
 https://user-images.githubusercontent.com/93961602/221894530-21a9354f-53dc-4c99-80d8-53166b0cefb5.mp4
