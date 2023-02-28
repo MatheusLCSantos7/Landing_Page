@@ -676,7 +676,30 @@ transition: transform 0.2s ease-in-out;
 }
 .contact-content-con .right-contact .submit-btn {
   display: flex;
-  justify-content: flex-start;
+  justify-content:space-between;
+}
+
+.enviar
+{
+    width: 20vw;
+    padding: 10px 5px;
+    border-radius: 15px;
+    background:rgba(11, 141, 130, 0.719) ;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    transition: 1s background ;
+    cursor: pointer;
+}
+
+.enviar:hover
+{
+    background: rgb(0, 247, 255);
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+#last-button .main-btn .btn-text {
+display: none;
 }
 
 /*CONTATO/////////////////////////////////////////////////////////////////////*/
