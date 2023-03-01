@@ -13,7 +13,7 @@ Olá e bem-vindo ao LogyCs, meu portfólio :) ! Meu nome é Matheus Santos, e es
 Claro que não se esqueça de colocar seus dados e fazer algumas alterações para ser originalmente seu e com suas marcas, afinal ninguem começa realmente do 0 certo?
 Todo projeto nasce de uma inspiração, mesmo que seja imaterial ou visual, e novamente digo que caso precise de ajuda estarei a disposição.
 
-Você pode [baixá-lo](https://github.com/MatheusLCSantos7/Landing_Page/files/10851438/MLCSPerfil.zip) clicando em `baixá-lo`! ou acessa-lo por [aqui](https://landing-page-matheuslcsantos.vercel.app/)
+Você pode acessa-lo por [aqui](https://landing-page-matheuslcsantos.vercel.app/)
 
 <h2 align="center">🔨 Funcionalidades do projeto</h2>
 Dentre suas funcionalidades estão :
