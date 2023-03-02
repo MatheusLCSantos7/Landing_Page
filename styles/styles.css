@@ -92,7 +92,7 @@ section {
 /*CONFIG PRINCIPAL ////////////////////*/
 
 
-/*SEGMENTOS ///////////////////////////////////////////*/
+/*SEGMENTOS /////////////////////////////////////////////////////////////////////////////*/
 .controls {
   position: fixed;
   z-index: 10;
@@ -154,11 +154,11 @@ section {
   pointer-events: none;
 }
 
-/*SEGMENTOS ///////////////////////////////////////////*/
+/*SEGMENTOS ///////////////////////////////////////////////////////////////////////////////////*/
 
 
 
-/*INTRO////////////////////////////////////////////////*/
+/*INTRO////////////////////////////////////////////////////////////////////////////////////////*/
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -233,10 +233,10 @@ section {
   margin: 1.5rem 20px;
   line-height: 2rem;
 }
-/*INTRO////////////////////////////////////////////////*/
+/*INTRO///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-/*APRESENTAÇÃO//////////////////////////////////////////////*/
+/*APRESENTAÇÃO/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .about-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -321,7 +321,7 @@ section {
   font-size: 2rem;
   text-transform: uppercase;
 }
-
+/*ESTRELAS/////////////////////////////////////////////////////////////////////*/
 .about-stats {
   padding-bottom: 4rem;
 }
@@ -341,51 +341,43 @@ section {
 .about-stats .progress-bars .progress-bar .progress-con {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .about-stats .progress-bars .progress-bar .progress-con .prog-text {
+  width: 65%;
   color: var(--color-grey-2);
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress {
-  width: 100%;
-  height: 0.95rem;
-  background-color: var(--color-grey-4);
-  margin-left: 1rem;
-  position: relative;
-  border-radius: 5px;
+.star{
+width: 100%;
+display: flex;
+justify-content: space-around;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress span {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: var(--color-secondary);
-  transition: all 0.2s ease-in-out;
-  width: 60%;
+.star i {
+  font-size: 1.5rem;
+  pointer-events: none;
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress span:hover{
-box-shadow: 1px 1px 4px 1px var(--color-secondary) ;
-transform: scale3d(1.1,1.1,0.8);
-transition: transform 0.2s ease-in-out;
+.none-star {
+  color: var(--color-grey-2);
+}
+.yes-star{
+  color: var(--color-secondary);
+  animation: lightImage 1.5s ease-in-out infinite;
 }
 
-.about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 40%;
+
+@keyframes lightImage{
+ 0%{
+  transform: scale3d(1.0,1.0,0.8);
+ }
+ 50%{
+  transform: scale3d(1.2,1.2,0.8);
+ }
+ 100%{
+  transform: scale3d(1.0,1.0,0.8);
+ }
 }
-.about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 35%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 30%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .net {
-  width: 35%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .mysql {
-  width: 25%;
-}
-.about-stats .progress-bars .progress-bar .progress-con .progress .office {
-  width: 50%;
-}
+
+/*ESTRELA///////////////////////////////////////////////////////////////////*/
 
 .stat-title {
   text-transform: uppercase;
@@ -423,7 +415,7 @@ transition: transform 0.2s ease-in-out;
   order: 6;
 }
 
-/*Timeline////////////////////////////////////*/
+/*Timeline////////////////////////////////////////////////////////////////////*/
 .timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -439,9 +431,6 @@ transition: transform 0.2s ease-in-out;
 #work-2{
   order: -2;
 } 
-
-
-
 
 /*Lenguages text//////////////////////////*/
 .powerApps-text{
@@ -476,12 +465,7 @@ transition: transform 0.2s ease-in-out;
   font-weight: 800;
   color:#7175AA;   
 }
-
 /*Lenguages text//////////////////////////*/
-
-
-
-
 
 .timeline .timeline-item:hover{
   border: 1px solid var(--color-secondary);
@@ -551,9 +535,9 @@ transition: transform 0.2s ease-in-out;
   padding: 2rem 0;
   text-align: center;
 }
-/*APRESENTAÇÃO//////////////////////////////////////////////*/
+/*APRESENTAÇÃO//////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*portifolio////////////////////////////////////////////////////*/
+/*portifolio////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .portfolios {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -570,7 +554,6 @@ transition: transform 0.2s ease-in-out;
   object-fit: cover;
   border-radius: 15px;
 }
-
 
 .portfolios .portfolio-item .hover-items {
   width: 100%;
@@ -626,10 +609,10 @@ transition: transform 0.2s ease-in-out;
   opacity: 1;
   transform: scale(1);
 }
-/*portifolio////////////////////////////////////////////////////*/
+/*portifolio/////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
-/*CONTATO/////////////////////////////////////////////////////////////////////*/
+/*CONTATO////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .contact-content-con {
   display: flex;
   padding-top: 3.5rem;
@@ -748,7 +731,7 @@ transition: transform 0.2s ease-in-out;
 display: none;
 }
 
-/*CONTATO/////////////////////////////////////////////////////////////////////*/
+/*CONTATO/////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 /*Independed components*/
