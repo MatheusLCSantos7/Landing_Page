@@ -11,3 +11,15 @@
         document.body.classList.toggle("light-mode");
     })
 })();
+
+//Typed Js///////////////////////////////////////////////////////////////////////
+
+const typed = new Typed('.multiple-text', {
+    strings:['Desenvolvedor Frontend...', 'Desenvolvedor Web...'],
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true
+});
+
+//Typed Js///////////////////////////////////////////////////////////////////////
